@@ -2,7 +2,7 @@ Summary:	Utilities for FreeDOS
 Summary(pl):	Programy u¿ytkowe dla DOSa
 Name:		dosemu-freedos-util
 Version:	beta7h01
-Release:	2
+Release:	3
 Epoch:		1
 License:	GPL
 Group:		Applications/Emulators
@@ -12,6 +12,7 @@ URL:		http://www.freedos.org/
 BuildRequires:	unzip
 Obsoletes:	dosemu-freedos
 Requires:	dosemu
+Requires:	dosemu-freedos-minimal
 Exclusivearch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,10 +37,13 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/var/lib/dosemu/bootdir
 cp -Rf freedos $RPM_BUILD_ROOT/var/lib/dosemu/bootdir
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-/var/lib/dosemu/bootdir/freedos/*
+/var/lib/dosemu/bootdir/freedos/bin/*
+/var/lib/dosemu/bootdir/freedos/ctmouse
+/var/lib/dosemu/bootdir/freedos/doc/*
+/var/lib/dosemu/bootdir/freedos/help/*
+/var/lib/dosemu/bootdir/freedos/nls/*
