@@ -2,7 +2,7 @@ Summary:	Utilities for FreeDOS
 Summary(pl):	Programy u¿ytkowe dla DOS-a
 Name:		dosemu-freedos-util
 Version:	beta7h01
-Release:	3
+Release:	4
 Epoch:		1
 License:	GPL
 Group:		Applications/Emulators
