@@ -22,10 +22,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Various utilities for DOS.
 
 %description -l pl
-Ró¿ne u¿ytki dla DOS-a.
+Ró¿ne programy u¿ytkowe dla DOS-a.
 
 %prep
-%setup -c %{name} -q -a1
+%setup -q -c -a1
 
 rm -rf freedos
 mkdir freedos
