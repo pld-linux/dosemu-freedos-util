@@ -15,7 +15,7 @@ BuildRequires:	unzip
 Obsoletes:	dosemu-freedos
 Requires:	dosemu
 Requires:	dosemu-freedos-minimal
-Exclusivearch:	%{ix86}
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
