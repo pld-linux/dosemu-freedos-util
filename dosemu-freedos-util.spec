@@ -35,6 +35,7 @@ rm -f freedos/copying freedos/bin/cwsdpmi.exe
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/var/lib/dosemu/bootdir
+
 cp -Rf freedos $RPM_BUILD_ROOT/var/lib/dosemu/bootdir
 
 %clean
