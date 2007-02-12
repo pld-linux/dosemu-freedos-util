@@ -1,5 +1,5 @@
 Summary:	Utilities for FreeDOS
-Summary(pl):	Programy uøytkowe dla DOS-a
+Summary(pl.UTF-8):   Programy u≈ºytkowe dla DOS-a
 Name:		dosemu-freedos-util
 Version:	beta7h01
 Release:	4
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Various utilities for DOS.
 
-%description -l pl
-RÛøne programy uøytkowe dla DOS-a.
+%description -l pl.UTF-8
+R√≥≈ºne programy u≈ºytkowe dla DOS-a.
 
 %prep
 %setup -q -c -a1
